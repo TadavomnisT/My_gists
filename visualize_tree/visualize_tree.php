@@ -11,10 +11,10 @@
 // //                                                                      // // 
 // //                                                                      // // 
 // //                    GitHub gist for this script:                      // // 
-// // https://gist.github.com/TadavomnisT/d9fc6ba06dcb775b5ee8cf8baaa94588 // // 
+// // https://gist.github.com/TadavomnisT/f83519f3503b74663c81af5d6c68dd82 // // 
 // //                                                                      // // 
 // //                 GitHub repositpry for this script:                   // // 
-// //                                        // //
+// //   https://github.com/TadavomnisT/My_gists/tree/main/visualize_tree   // //
 // //                                                                      // // 
 // // // // // // // // // // // // // // // // // // // // // // // // // // //
 
