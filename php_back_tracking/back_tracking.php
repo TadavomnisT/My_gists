@@ -20,6 +20,9 @@ set_time_limit(0);
 // //                    GitHub gist for this script:                      // // 
 // // https://gist.github.com/TadavomnisT/d9fc6ba06dcb775b5ee8cf8baaa94588 // // 
 // //                                                                      // // 
+// //                 GitHub repositpry for this script:                   // // 
+// // https://github.com/TadavomnisT/My_gists/tree/main/php_back_tracking  // // 
+// //                                                                      // // 
 // // // // // // // // // // // // // // // // // // // // // // // // // // //
 
 
@@ -340,14 +343,13 @@ class Tree
                 if ($key === array_key_last($tree)){
                     echo (($first) ? "" : $firstPadding ) . $stack . "└── ";
                     $padding = "    ";
-                    if($first) $firstPadding = "    ";
                 }
                 else {
-                    echo (($first) ? "" : "$firstPadding" ) . $stack . "├── ";
+                    echo (($first) ? "" : $firstPadding ) . $stack . "├── ";
                     $padding = "│   ";
                 }
                 if( is_array($value) )$this->printArray( $value , $key ,   $stack . (($first) ? "" : $padding ) , FALSE , $firstPadding );
-                else echo $key . " -> " . $value . PHP_EOL;
+                else echo  $value . PHP_EOL;
             }
         }
         else echo $tree . PHP_EOL;
