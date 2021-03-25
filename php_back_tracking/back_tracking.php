@@ -345,7 +345,7 @@ class Tree
                     if($first) $firstPadding = "    ";
                 }
                 else {
-                    echo (($first) ? "" : "$firstPadding" ) . $stack . "├── ";
+                    echo (($first) ? "" : $firstPadding ) . $stack . "├── ";
                     $padding = "│   ";
                 }
                 if( is_array($value) )$this->printArray( $value , $key ,   $stack . (($first) ? "" : $padding ) , FALSE , $firstPadding );
