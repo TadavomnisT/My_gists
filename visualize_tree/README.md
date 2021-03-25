@@ -1,7 +1,7 @@
 Greetings, my excellent friends!
 
 This is the implemention of a function that visualize a tree in php, it prints every php array in shape of tree.
-Works fine with `int` , `float/double` . `string` and `bool` values. 
+Works fine with `int` , `float/double` , `string` and `bool` values. 
 
 Result:
 ```
