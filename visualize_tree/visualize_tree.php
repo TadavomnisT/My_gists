@@ -32,7 +32,7 @@ function printTree( array $tree , string $key = "." , string $stack = "" , $firs
                 if($first) $firstPadding = "    ";
             }
             else {
-                echo (($first) ? "" : "$firstPadding" ) . $stack . "├── ";
+                echo (($first) ? "" : $firstPadding ) . $stack . "├── ";
                 $padding = "│   ";
             }
             if( is_array($value) )printTree( $value , $key ,   $stack . (($first) ? "" : $padding ) , FALSE , $firstPadding );
