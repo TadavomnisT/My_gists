@@ -25,7 +25,6 @@ set_time_limit(0);
 // //                                                                      // // 
 // // // // // // // // // // // // // // // // // // // // // // // // // // //
 
-
 n_rooks( 4 );
 
 n_rooks( 4 , true ); //distinguish between rooks
@@ -343,13 +342,14 @@ class Tree
                 if ($key === array_key_last($tree)){
                     echo (($first) ? "" : $firstPadding ) . $stack . "└── ";
                     $padding = "    ";
+                    if($first) $firstPadding = "    ";
                 }
                 else {
-                    echo (($first) ? "" : $firstPadding ) . $stack . "├── ";
+                    echo (($first) ? "" : "$firstPadding" ) . $stack . "├── ";
                     $padding = "│   ";
                 }
                 if( is_array($value) )$this->printArray( $value , $key ,   $stack . (($first) ? "" : $padding ) , FALSE , $firstPadding );
-                else echo  $value . PHP_EOL;
+                else echo $key . " -> " . $value . PHP_EOL;
             }
         }
         else echo $tree . PHP_EOL;
